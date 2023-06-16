@@ -16,7 +16,8 @@ public class BaseTest {
 
     @BeforeEach
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "C:\\repos\\TestNG_Allure\\src\\main\\resources\\chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "C:\\repos\\TestNG_Allure\\src\\main\\resources\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver");
         ChromeOptions chromeOptions = new ChromeOptions();
 //        chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
